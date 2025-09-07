@@ -40,15 +40,15 @@ banner_display()
 #
 #
 def program():
-    number = input("[+] Put Number with country code like +263: +")
+    number = input("[+] Put Number with country code like +94: +")
     realnumber = "+"+number
     check = number.isnumeric()
     lennber = len(number)
     if (check == True):
-        if (lennber < 10 or lennber > 10):
-            delay_print(f"{Fore.RED}Number must be 10 digits\n")
+        if (lennber < 11 or lennber > 11):
+            delay_print(f"{Fore.RED}Number must be 11 digits\n")
             program()
-        elif (lennber==10):
+        elif (lennber==11):
             delay_print(f"{Fore.YELLOW}1) Ban number\n")
             delay_print(f"{Fore.YELLOW}2) Information about this number\n")
             option = input(f"{Fore.YELLOW}[+] Choose an option: ")
